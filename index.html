@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaithra N | 2nd Year Computer Science (Data Science) Student & AI Enthusiast</title>
+  <meta name="description" content="Portfolio of Chaithra N - 2nd Year Computer Science (Data Science) student specializing in Python, Machine Learning, SQL, and AI solutions like CropShield AI.">
+  <meta name="keywords" content="Chaithra N, Data Science, Machine Learning, Python, SQL, CropShield AI, Portfolio, Computer Science, Adhichunchanagiri Institute of Technology">
+  <meta name="author" content="Chaithra N">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%2338bdf8'>CN</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+  <!-- Subtle Canvas for Tech/AI Grid Background -->
+  <canvas id="tech-canvas"></canvas>
+
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow glow-top-right"></div>
+  <div class="ambient-glow glow-bottom-left"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Website Name: Exactly Chaithra N without code brackets -->
+      <a href="#home" class="nav-brand">Chaithra N</a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> <span>Home</span></a></li>
+          <li class="nav-item"><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> <span>About</span></a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> <span>Skills</span></a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link"><i class="fa-solid fa-diagram-project"></i> <span>Projects</span></a></li>
+          <li class="nav-item"><a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> <span>Education</span></a></li>
+          <li class="nav-item"><a href="#certifications" class="nav-link"><i class="fa-solid fa-award"></i> <span>Certifications</span></a></li>
+          <li class="nav-item"><a href="#achievements" class="nav-link"><i class="fa-solid fa-trophy"></i> <span>Achievements</span></a></li>
+          <li class="nav-item"><a href="#resume" class="nav-link"><i class="fa-solid fa-file-invoice"></i> <span>Resume</span></a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+
+        <!-- Mobile Drawer Theme Toggle & CTA -->
+        <div class="mobile-menu-footer">
+          <button class="theme-toggle-btn mobile-theme-btn" onclick="toggleTheme()" aria-label="Toggle dark and light theme">
+            <i class="fa-solid fa-moon"></i>
+            <span class="theme-btn-text">Switch Theme</span>
+          </button>
+          <a href="chaithra_resume.pdf" class="btn btn-sm btn-primary" download="Chaithra_N_Resume.pdf" target="_blank">
+            <i class="fa-solid fa-download"></i> <span>Download Resume</span>
+          </a>
+        </div>
+      </nav>
+
+      <!-- Nav CTA & Theme Switcher -->
+      <div class="nav-actions">
+        <!-- Professional Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="theme-toggle-btn" onclick="toggleTheme()" aria-label="Toggle dark and light theme" title="Toggle Theme (Dark / Light)">
+          <i class="fa-solid fa-moon" id="theme-toggle-icon"></i>
+          <span class="theme-toggle-label" id="theme-toggle-label">Theme</span>
+        </button>
+
+        <!-- Resume Download Button -->
+        <a href="chaithra_resume.pdf" class="btn btn-sm btn-outline-glow nav-resume-btn" download="Chaithra_N_Resume.pdf" target="_blank">
+          <i class="fa-solid fa-download"></i> <span>Resume</span>
+        </a>
+
+        <!-- Mobile Hamburger Menu Button -->
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main>
+    <!-- ==================== HERO SECTION (HOME) ==================== -->
+    <section class="section hero-section" id="home">
+      <div class="container hero-container">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-pulse"></span>
+            <span>2nd Year Computer Science (Data Science)</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="hero-greeting">Hi, I'm</span>
+            <span class="hero-name gradient-text">Chaithra N</span>
+          </h1>
+
+          <div class="hero-roles">
+            <span class="role-static">I build </span>
+            <span class="typed-text" id="typed-role"></span>
+            <span class="cursor">&nbsp;</span>
+          </div>
+
+          <p class="hero-bio">
+            A passionate <strong>2nd-year Computer Science (Data Science)</strong> undergraduate student focused on solving real-world challenges with <strong>Python, Machine Learning, and SQL</strong>. Creator of <strong>CropShield AI</strong>, competitive hackathon participant, and continuous learner.
+          </p>
+
+          <!-- Call to Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="chaithra_resume.pdf" class="btn btn-secondary" download="Chaithra_N_Resume.pdf" target="_blank">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Download CV</span>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-regular fa-paper-plane"></i>
+              <span>Let's Connect</span>
+            </a>
+          </div>
+
+          <!-- Social Links Bar -->
+          <div class="hero-socials">
+            <span class="social-label">Connect with me:</span>
+            <div class="social-icons">
+              <!-- ========================================================= -->
+              <!-- GITHUB URL PLACEHOLDER: Replace URL below if needed       -->
+              <!-- ========================================================= -->
+              <a href="https://github.com/Chaithra-N-ship-it" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+              </a>
+
+              <!-- ========================================================= -->
+              <!-- LINKEDIN URL PLACEHOLDER: Replace URL below if needed     -->
+              <!-- ========================================================= -->
+              <a href="https://www.linkedin.com/in/chaithra-n-a9a063398?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+
+              <a href="mailto:chaithra312008@gmail.com" class="social-btn" title="Email Chaithra">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a href="tel:+917892291145" class="social-btn" title="Call Chaithra">
+                <i class="fa-solid fa-phone"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Photo Area -->
+        <div class="hero-visual">
+          <div class="hero-profile-container">
+            <div class="photo-glow-wrapper">
+              <div class="photo-ambient-ring"></div>
+              <div class="photo-card">
+                <img src="professinal photoo.jpeg" alt="Chaithra N - Computer Science (Data Science) Student" class="hero-photo">
+              </div>
+            </div>
+
+            <!-- Clean, Minimal Skill Tags Below Image -->
+            <div class="hero-skills-tags">
+              <span class="hero-skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="hero-skill-tag"><i class="fa-solid fa-c"></i> C</span>
+              <span class="hero-skill-tag"><i class="fa-solid fa-code"></i> C++</span>
+              <span class="hero-skill-tag"><i class="fa-brands fa-java"></i> Java</span>
+              <span class="hero-skill-tag"><i class="fa-brands fa-html5"></i> HTML</span>
+              <span class="hero-skill-tag"><i class="fa-solid fa-brain"></i> Machine Learning</span>
+              <span class="hero-skill-tag"><i class="fa-solid fa-database"></i> SQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll to About section">
+        <span class="mouse">
+          <span class="wheel"></span>
+        </span>
+        <span class="scroll-text">Scroll Down</span>
+      </a>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-user"></i> Get To Know Me</span>
+          <h2 class="section-title">About <span class="gradient-text">Chaithra N</span></h2>
+          <p class="section-subtitle">Bridging engineering fundamentals and modern data science to build impactful solutions.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- About Bio Left Column -->
+          <div class="about-card glass-panel bio-card">
+            <div class="card-icon-header">
+              <div class="icon-orb"><i class="fa-solid fa-terminal"></i></div>
+              <span class="card-kicker">Data Science Student & Developer</span>
+            </div>
+            <h3>Passionate about leveraging Artificial Intelligence to solve societal challenges.</h3>
+            <p>
+              I am a 2nd-year <strong>Computer Science & Engineering (Data Science)</strong> undergraduate at <strong>Adhichunchanagiri Institute of Technology</strong> (2025 - 29). My technical journey is driven by curiosity—transforming complex datasets into actionable insights and deploying intelligent machine learning models that make a difference.
+            </p>
+            <p>
+              From conceptualizing <strong>CropShield AI</strong> to assist farmers with early agricultural threat detection, to designing digital marketing platforms for rural artisans, I enjoy creating software that directly impacts lives. I have actively competed in competitive hackathons including <strong>Adhi Tantra 2026</strong> and hold industry-recognized certifications from Infosys Springboard.
+            </p>
+
+            <div class="about-keypoints">
+              <div class="keypoint-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Strong foundation in OOP, Algorithms & Database Design</span>
+              </div>
+              <div class="keypoint-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Hands-on experience in end-to-end Machine Learning pipelines</span>
+              </div>
+              <div class="keypoint-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Proven collaboration in fast-paced hackathons and team projects</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- About Details & Stat Cards -->
+          <div class="about-stats-column">
+            <!-- Stats Counters -->
+            <div class="stats-row">
+              <div class="stat-card glass-panel">
+                <div class="stat-number gradient-text" data-count="7.17">7.17</div>
+                <div class="stat-label">B.E. CGPA</div>
+                <div class="stat-desc">Adhichunchanagiri Inst. of Tech</div>
+              </div>
+              <div class="stat-card glass-panel">
+                <div class="stat-number gradient-text" data-count="6">6+</div>
+                <div class="stat-label">Months R&D</div>
+                <div class="stat-desc">Dedicated Project Cycles</div>
+              </div>
+              <div class="stat-card glass-panel">
+                <div class="stat-number gradient-text" data-count="3">3+</div>
+                <div class="stat-label">Certifications</div>
+                <div class="stat-desc">Infosys & National Hackathon</div>
+              </div>
+              <div class="stat-card glass-panel">
+                <div class="stat-number gradient-text" data-count="2">2+</div>
+                <div class="stat-label">Major Projects</div>
+                <div class="stat-desc">AI Crop Defense & Rural Platform</div>
+              </div>
+            </div>
+
+            <!-- Quick Details Card -->
+            <div class="quick-info-card glass-panel">
+              <h4 class="info-title"><i class="fa-solid fa-id-badge"></i> Quick Profile</h4>
+              <div class="info-grid">
+                <div class="info-item">
+                  <span class="info-label">Degree:</span>
+                  <span class="info-value">B.E. CSE (Data Science)</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Academic Stage:</span>
+                  <span class="info-value">2nd Year (2025 - 29)</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Location:</span>
+                  <span class="info-value">Karnataka, India</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Core Focus:</span>
+                  <span class="info-value">Machine Learning & SQL</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Email:</span>
+                  <span class="info-value"><a href="mailto:chaithra312008@gmail.com">chaithra312008@gmail.com</a></span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Phone:</span>
+                  <span class="info-value"><a href="tel:+917892291145">+91 7892291145</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-code"></i> Technical Toolkit</span>
+          <h2 class="section-title">Skills & <span class="gradient-text">Proficiencies</span></h2>
+          <p class="section-subtitle">Core technical stack spanning programming languages, artificial intelligence, databases, and foundational computer science.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="skills-filter">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="ai-ds">AI & Data Science</button>
+          <button class="filter-btn" data-filter="programming">Programming & Core</button>
+          <button class="filter-btn" data-filter="database">Databases & Web</button>
+          <button class="filter-btn" data-filter="systems">Systems & Tools</button>
+        </div>
+
+        <div class="skills-cards-grid">
+          <!-- Skill Card: Python -->
+          <div class="skill-card glass-panel" data-category="programming ai-ds">
+            <div class="skill-icon-wrap python-color">
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-header-meta">
+                <h4>Python</h4>
+                <span class="skill-pct">Proficient</span>
+              </div>
+              <p>Primary language for Machine Learning modeling, data pipelines, NumPy, Pandas, automation, and project algorithms.</p>
+              <div class="skill-tags">
+                <span>OOP</span>
+                <span>Data Analysis</span>
+                <span>ML Scripts</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card: Machine Learning & AI -->
+          <div class="skill-card glass-panel" data-category="ai-ds">
+            <div class="skill-icon-wrap ai-color">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-header-meta">
+                <h4>Machine Learning & AI</h4>
+                <span class="skill-pct">Specialization</span>
+              </div>
+              <p>Predictive modeling, classification, model evaluation, supervised learning, and AI-driven agricultural solutions.</p>
+              <div class="skill-tags">
+                <span>Model Training</span>
+                <span>Crop Protection AI</span>
+                <span>Feature Eng.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card: MySQL & SQL -->
+          <div class="skill-card glass-panel" data-category="database">
+            <div class="skill-icon-wrap sql-color">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-header-meta">
+                <h4>MySQL & SQL</h4>
+                <span class="skill-pct">Advanced</span>
+              </div>
+              <p>Relational schema design, complex query writing, indexing, table relationships, aggregation, and backend data storage.</p>
+              <div class="skill-tags">
+                <span>Queries</span>
+                <span>Schema Design</span>
+                <span>RDBMS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card: Java -->
+          <div class="skill-card glass-panel" data-category="programming">
+            <div class="skill-icon-wrap java-color">
+              <i class="fa-brands fa-java"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-header-meta">
+                <h4>Java</h4>
+                <span class="skill-pct">Certified</span>
+              </div>
+              <p>Object-Oriented Programming, enterprise fundamentals, collections, data structures. Certified by Infosys Springboard.</p>
+              <div class="skill-tags">
+                <span>OOP</span>
+                <span>Springboard Certified</span>
+                <span>Modular Code</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card: C & C++ -->
+          <div class="skill-card glass-panel" data-category="programming">
+            <div class="skill-icon-wrap cpp-color">
+              <i class="fa-solid fa-c"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-header-meta">
+                <h4>C / C++</h4>
+                <span class="skill-pct">Core Foundational</span>
+              </div>
+              <p>Low-level memory understanding, pointer logic, algorithm implementation, structured problem solving, and computational efficiency.</p>
+              <div class="skill-tags">
+                <span>Algorithms</span>
+                <span>Pointers</span>
+                <span>Memory Mgmt</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card: Data Structures & Algorithms -->
+          <div class="skill-card glass-panel" data-category="programming">
+            <div class="skill-icon-wrap dsa-color">
+              <i class="fa-solid fa-sitemap"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-header-meta">
+                <h4>Data Structures & Algorithms</h4>
+                <span class="skill-pct">Core Subject</span>
+              </div>
+              <p>Arrays, Linked Lists, Trees, Stacks, Queues, Sorting algorithms, Search strategies, and asymptotic time/space analysis.</p>
+              <div class="skill-tags">
+                <span>DSA</span>
+                <span>Complexity Analysis</span>
+                <span>Logic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card: Unix / Linux -->
+          <div class="skill-card glass-panel" data-category="systems">
+            <div class="skill-icon-wrap unix-color">
+              <i class="fa-brands fa-linux"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-header-meta">
+                <h4>Unix & Linux Environments</h4>
+                <span class="skill-pct">Certified</span>
+              </div>
+              <p>Command-line interface (CLI) navigation, file permissions, shell workflows, process monitoring. Certified by Infosys Springboard.</p>
+              <div class="skill-tags">
+                <span>CLI</span>
+                <span>Bash / Shell</span>
+                <span>Springboard Certified</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card: Operating Systems & Computer Core -->
+          <div class="skill-card glass-panel" data-category="systems">
+            <div class="skill-icon-wrap os-color">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-header-meta">
+                <h4>Operating Systems</h4>
+                <span class="skill-pct">Academic Core</span>
+              </div>
+              <p>Process management, CPU scheduling, thread synchronization, deadlocks, memory management, and virtual memory concepts.</p>
+              <div class="skill-tags">
+                <span>Concurrency</span>
+                <span>Memory Models</span>
+                <span>Processes</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card: Web Development (HTML, CSS, Frontend) -->
+          <div class="skill-card glass-panel" data-category="database">
+            <div class="skill-icon-wrap web-color">
+              <i class="fa-brands fa-html5"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-header-meta">
+                <h4>Frontend & Web Basics</h4>
+                <span class="skill-pct">Functional</span>
+              </div>
+              <p>HTML5, responsive CSS3 styling, JavaScript interactions, and UI layout creation for web project showcases.</p>
+              <div class="skill-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>Responsive Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-diagram-project"></i> Portfolio Works</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Real-world systems built with artificial intelligence, data engineering, and modern development stacks.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- FLAGSHIP PROJECT: CropShield AI -->
+          <div class="project-card glass-panel featured-project">
+            <div class="project-banner">
+              <div class="banner-badge"><i class="fa-solid fa-star"></i> Flagship Project</div>
+              <div class="project-tech-pills">
+                <span class="tech-pill"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="tech-pill"><i class="fa-solid fa-brain"></i> Machine Learning / AI</span>
+                <span class="tech-pill"><i class="fa-solid fa-wheat-awn"></i> AgriTech</span>
+              </div>
+              <div class="project-duration-tag"><i class="fa-regular fa-clock"></i> 6 Months Development</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-header-info">
+                <div class="project-title-group">
+                  <h3 class="project-title">CropShield AI</h3>
+                  <span class="project-category">AI-Driven Agricultural Crop Protection & Diagnostic Solution</span>
+                </div>
+              </div>
+
+              <p class="project-description">
+                <strong>CropShield AI</strong> is an intelligent crop health monitoring and protection system built to identify and remediate agricultural threats early. By leveraging predictive machine learning models and computer vision pipelines, it assists farmers in recognizing plant pathogens, leaf blights, and pest infestations, delivering actionable remedies that improve agricultural productivity.
+              </p>
+
+              <div class="project-highlights-box">
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span><strong>AI Disease Detection:</strong> High-accuracy classification of common crop diseases from visual patterns.</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span><strong>Actionable Remedy Engine:</strong> Provides immediate chemical & organic treatment recommendations.</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span><strong>Farmer-Centric Impact:</strong> Designed to prevent catastrophic harvest loss and minimize chemical overuse.</span>
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <div class="project-links">
+                  <a href="https://github.com/Chaithra-N-ship-it" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                    <i class="fa-brands fa-github"></i>
+                    <span>Source Code</span>
+                  </a>
+                  <button class="btn btn-sm btn-outline-glow open-modal-btn" data-modal="cropshield-modal">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>System Architecture</span>
+                  </button>
+                </div>
+                <div class="project-status">
+                  <span class="status-dot"></span>
+                  <span>Active R&D</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: Rural Product Marketing Platform -->
+          <div class="project-card glass-panel">
+            <div class="project-banner project-banner-secondary">
+              <div class="banner-badge secondary-badge"><i class="fa-solid fa-shop"></i> Social Commerce</div>
+              <div class="project-tech-pills">
+                <span class="tech-pill"><i class="fa-brands fa-java"></i> Java</span>
+                <span class="tech-pill"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="tech-pill"><i class="fa-solid fa-database"></i> MySQL</span>
+              </div>
+              <div class="project-duration-tag"><i class="fa-regular fa-clock"></i> 6 Months Development</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-header-info">
+                <div class="project-title-group">
+                  <h3 class="project-title">Assist Rural Product Marketing</h3>
+                  <span class="project-category">Technology-Driven Marketplace for Rural Producers</span>
+                </div>
+              </div>
+
+              <p class="project-description">
+                Developed a targeted software solution to bridge the market accessibility gap for rural artisans and local producers. The system connects rural products directly with potential regional and urban customers, significantly increasing product visibility and eliminating intermediary markups.
+              </p>
+
+              <div class="project-highlights-box">
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span><strong>Direct Producer-to-Buyer Pipeline:</strong> Removes intermediaries to maximize producer profit margins.</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span><strong>Structured Cataloging & Inventory:</strong> Relational database design storing crafts, organic produce, and inventory.</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span><strong>Visibility Optimization:</strong> Search and category matching logic allowing customers to discover authentic rural goods.</span>
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <div class="project-links">
+                  <a href="https://github.com/Chaithra-N-ship-it" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                    <i class="fa-brands fa-github"></i>
+                    <span>Repository</span>
+                  </a>
+                  <button class="btn btn-sm btn-outline-glow open-modal-btn" data-modal="ruralmarket-modal">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Feature Details</span>
+                  </button>
+                </div>
+                <div class="project-status">
+                  <span class="status-dot"></span>
+                  <span>Completed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION SECTION ==================== -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Pathway</span>
+          <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+          <p class="section-subtitle">Consistent academic foundation in Computer Science, Data Science, and analytical problem-solving.</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Item 1: B.E. Degree (2025 - 29) -->
+          <div class="timeline-item active-stage">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div class="timeline-title-wrap">
+                  <span class="timeline-badge current-badge">Undergraduate (2nd Year)</span>
+                  <h3 class="timeline-degree">Bachelor of Engineering (B.E.) in CSE (Data Science)</h3>
+                  <h4 class="timeline-institution">
+                    <i class="fa-solid fa-building-columns"></i>
+                    Adhichunchanagiri Institute of Technology, Chikkamagaluru, Karnataka
+                  </h4>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-year"><i class="fa-regular fa-calendar"></i> 2025 – 29</span>
+                  <span class="timeline-grade"><i class="fa-solid fa-star"></i> CGPA: <strong>7.17 / 10</strong></span>
+                </div>
+              </div>
+              <p class="timeline-summary">
+                Currently in 2nd year, specializing in Data Science and Machine Learning engineering. Deep coursework in Artificial Intelligence, Object-Oriented Programming, Database Management Systems, Operating Systems, Data Structures & Algorithms, and Predictive Modeling.
+              </p>
+              <div class="timeline-tags">
+                <span>Data Science</span>
+                <span>Machine Learning</span>
+                <span>Python</span>
+                <span>SQL</span>
+                <span>DSA</span>
+                <span>OOP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: PUC -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div class="timeline-title-wrap">
+                  <span class="timeline-badge">Pre-University</span>
+                  <h3 class="timeline-degree">Pre-University Course (PUC - Science)</h3>
+                  <h4 class="timeline-institution">
+                    <i class="fa-solid fa-building-columns"></i>
+                    St Joseph’s PU College Excellence, Bhadravathi, Karnataka
+                  </h4>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-year"><i class="fa-regular fa-calendar"></i> Graduated 2025</span>
+                  <span class="timeline-grade"><i class="fa-solid fa-percent"></i> Percentage: <strong>80.4%</strong></span>
+                </div>
+              </div>
+              <p class="timeline-summary">
+                Completed science stream with focus on analytical reasoning, mathematical fundamentals, physics, and computer science basics that built strong foundations for engineering.
+              </p>
+              <div class="timeline-tags">
+                <span>Mathematics</span>
+                <span>Physics</span>
+                <span>Analytical Thinking</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: 10th / SSLC -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div class="timeline-title-wrap">
+                  <span class="timeline-badge">Secondary Education</span>
+                  <h3 class="timeline-degree">Secondary School Leaving Certificate (SSLC - 10th)</h3>
+                  <h4 class="timeline-institution">
+                    <i class="fa-solid fa-building-columns"></i>
+                    St Charles Kannada High School, Bhadravathi, Karnataka
+                  </h4>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-year"><i class="fa-regular fa-calendar"></i> Schooling</span>
+                  <span class="timeline-grade"><i class="fa-solid fa-percent"></i> Percentage: <strong>85.77%</strong></span>
+                </div>
+              </div>
+              <p class="timeline-summary">
+                Demonstrated high academic consistency, school-level leadership, and strong fundamentals in science and mathematics.
+              </p>
+              <div class="timeline-tags">
+                <span>Distinction (85.77%)</span>
+                <span>Academic Foundation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICATIONS SECTION ==================== -->
+    <section class="section cert-section" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-award"></i> Verified Credentials</span>
+          <h2 class="section-title">Certifications & <span class="gradient-text">Credentials</span></h2>
+          <p class="section-subtitle">Official certificates awarded by recognized industry leaders and engineering symposiums. Click any certificate to preview.</p>
+        </div>
+
+        <div class="cert-grid">
+          <!-- Cert 1: Adhi Tantra 2k26 Hackathon -->
+          <div class="cert-card glass-panel" onclick="openCertModal('certificate (3).jpeg', 'ADHI TANTRA 2k26 Hardware Hackathon', 'Certificate of Participation awarded by Adichunchanagiri University & BGS Institute of Technology in collaboration with IEEE, CSI, NBA, AICTE and IDEA Lab on May 07, 2026.')">
+            <div class="cert-image-preview">
+              <img src="certificate (3).jpeg" alt="ADHI TANTRA 2k26 Hardware Hackathon Certificate" loading="lazy">
+              <div class="cert-overlay">
+                <span class="cert-zoom-btn"><i class="fa-solid fa-expand"></i> View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-content">
+              <div class="cert-issuer-badge hackathon-badge">
+                <i class="fa-solid fa-trophy"></i> Adichunchanagiri University
+              </div>
+              <h3 class="cert-title">ADHI TANTRA 2k26 Hackathon</h3>
+              <p class="cert-desc">National Hardware Hackathon participation organized with IEEE & CSI. Rigorous 24-hr ideation and collaborative hardware/software problem-solving.</p>
+              <div class="cert-footer-meta">
+                <span class="cert-date"><i class="fa-regular fa-calendar"></i> May 07, 2026</span>
+                <span class="cert-verify-link"><i class="fa-solid fa-shield-check"></i> Verified</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 2: Java Programming Fundamentals -->
+          <div class="cert-card glass-panel" onclick="openCertModal('certificate (2).jpeg', 'Java Programming Fundamentals', 'Course Completion Certificate awarded to Chaithra N by Infosys Springboard on October 7, 2026.')">
+            <div class="cert-image-preview">
+              <img src="certificate (2).jpeg" alt="Infosys Java Programming Fundamentals Certificate" loading="lazy">
+              <div class="cert-overlay">
+                <span class="cert-zoom-btn"><i class="fa-solid fa-expand"></i> View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-content">
+              <div class="cert-issuer-badge infosys-badge">
+                <i class="fa-solid fa-building"></i> Infosys Springboard
+              </div>
+              <h3 class="cert-title">Java Programming Fundamentals</h3>
+              <p class="cert-desc">Core Object-Oriented Programming (OOP), class hierarchies, encapsulation, exception handling, and Java standard library.</p>
+              <div class="cert-footer-meta">
+                <span class="cert-date"><i class="fa-regular fa-calendar"></i> October 07, 2026</span>
+                <span class="cert-verify-link"><i class="fa-solid fa-qrcode"></i> QR Verified</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 3: Introduction to Unix -->
+          <div class="cert-card glass-panel" onclick="openCertModal('certificate.jpeg', 'Introduction to Unix', 'Course Completion Certificate awarded to Chaithra N by Infosys Springboard on October 6, 2026.')">
+            <div class="cert-image-preview">
+              <img src="certificate.jpeg" alt="Infosys Introduction to Unix Certificate" loading="lazy">
+              <div class="cert-overlay">
+                <span class="cert-zoom-btn"><i class="fa-solid fa-expand"></i> View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-content">
+              <div class="cert-issuer-badge infosys-badge">
+                <i class="fa-solid fa-building"></i> Infosys Springboard
+              </div>
+              <h3 class="cert-title">Introduction to Unix</h3>
+              <p class="cert-desc">Unix OS architecture, filesystem navigation, shell commands, pipes & filters, user permissions, and process management.</p>
+              <div class="cert-footer-meta">
+                <span class="cert-date"><i class="fa-regular fa-calendar"></i> October 06, 2026</span>
+                <span class="cert-verify-link"><i class="fa-solid fa-qrcode"></i> QR Verified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ACHIEVEMENTS SECTION ==================== -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-trophy"></i> Milestones</span>
+          <h2 class="section-title">Key <span class="gradient-text">Achievements</span></h2>
+          <p class="section-subtitle">Notable recognitions, competitive participations, and engineering milestones achieved.</p>
+        </div>
+
+        <div class="achievements-grid">
+          <!-- Achievement 1 -->
+          <div class="achievement-card glass-panel">
+            <div class="achievement-icon-wrap">
+              <i class="fa-solid fa-medal"></i>
+            </div>
+            <div class="achievement-body">
+              <div class="achievement-badge">Hackathon</div>
+              <h3>ADHI TANTRA 2k26 Hackathon Finalist / Participant</h3>
+              <p>
+                Selected and actively participated in the state-level <strong>ADHI TANTRA 2k26 Hardware Hackathon</strong> conducted by the Faculty of Engineering & Technology at Adichunchanagiri University, supported by IEEE, CSI, and AICTE.
+              </p>
+              <ul class="achievement-points">
+                <li>Collaborated under timed competitive constraints to build a tech prototype.</li>
+                <li>Pitched engineering solution before an esteemed panel of academic & industry judges.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Achievement 2 -->
+          <div class="achievement-card glass-panel">
+            <div class="achievement-icon-wrap">
+              <i class="fa-solid fa-seedling"></i>
+            </div>
+            <div class="achievement-body">
+              <div class="achievement-badge">Innovation</div>
+              <h3>CropShield AI Agricultural R&D Initiative</h3>
+              <p>
+                Spearheaded the 6-month research and development of <strong>CropShield AI</strong>, applying computer vision and machine learning techniques to help smallholder farmers diagnose plant diseases accurately.
+              </p>
+              <ul class="achievement-points">
+                <li>Formulated an end-to-end dataset curation and machine learning workflow.</li>
+                <li>Synthesized actionable agronomic treatment recommendations into the AI pipeline.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Achievement 3 -->
+          <div class="achievement-card glass-panel">
+            <div class="achievement-icon-wrap">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div class="achievement-body">
+              <div class="achievement-badge">Industry Learning</div>
+              <h3>Infosys Springboard Certification Laurels</h3>
+              <p>
+                Successfully earned dual industry certifications in <strong>Java Programming Fundamentals</strong> and <strong>Introduction to Unix</strong> via Infosys Springboard, reinforcing software development discipline.
+              </p>
+              <ul class="achievement-points">
+                <li>Mastered modular OOP architecture and Unix shell automation.</li>
+                <li>Earned verified credentials with high assessment benchmarks.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Achievement 4 -->
+          <div class="achievement-card glass-panel">
+            <div class="achievement-icon-wrap">
+              <i class="fa-solid fa-user-graduate"></i>
+            </div>
+            <div class="achievement-body">
+              <div class="achievement-badge">Academics</div>
+              <h3>Consistent Academic Excellence</h3>
+              <p>
+                Maintained consistent high performance across secondary education (<strong>85.77%</strong>), pre-university (<strong>80.4%</strong>), and undergraduate studies (<strong>7.17 CGPA</strong>) in Data Science (2025 - 29).
+              </p>
+              <ul class="achievement-points">
+                <li>Specialized focus on core CS subjects, DBMS, and advanced data analytics.</li>
+                <li>Balanced academic coursework with intensive project building and hackathons.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== RESUME SECTION (VIDEO & PDF) ==================== -->
+    <section class="section resume-section" id="resume">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-file-invoice"></i> Credentials & Media</span>
+          <h2 class="section-title">My <span class="gradient-text">Resume & Video</span></h2>
+          <p class="section-subtitle">Review my complete curriculum vitae and watch my video profile introduction.</p>
+        </div>
+
+        <div class="resume-wrapper">
+          <!-- Video Resume Showcase with UN-CROPPED Complete Photo Poster -->
+          <div class="resume-video-card glass-panel">
+            <div class="card-icon-header">
+              <div class="icon-orb"><i class="fa-solid fa-video"></i></div>
+              <span class="card-kicker">Interactive Media Pitch</span>
+            </div>
+            <h3 class="video-card-title">Video Introduction & Resume Pitch</h3>
+            <p class="video-card-desc">
+              Watch my self-introduction highlighting my passions, engineering philosophy, and motivation to contribute to innovative tech teams.
+            </p>
+
+            <!-- Responsive, Centered Video Container with COMPLETE uncropped photo framing -->
+            <div class="video-player-container" id="video-container">
+              <!-- Uncropped Poster Preview Overlay (preserves entire face and head) -->
+              <div class="video-poster-overlay" id="video-poster-overlay" onclick="startVideoPlayback()">
+                <img src="professinal photoo.jpeg" alt="Chaithra N - Video Resume Introduction" class="video-poster-img">
+                <div class="video-play-btn-circle" title="Play Video Introduction">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="video-poster-badge">
+                  <i class="fa-solid fa-video"></i>
+                  <span>Chaithra N • Video Introduction</span>
+                </div>
+              </div>
+
+              <!-- Native Video Player (Unchanged video file, uncropped display) -->
+              <video id="resume-video" controls preload="metadata" poster="professinal photoo.jpeg">
+                <source src="resume vedio.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <div class="video-actions">
+              <button class="btn btn-sm btn-outline-glow" onclick="toggleVideoPlayback()">
+                <i class="fa-solid fa-play" id="play-btn-icon"></i>
+                <span id="play-btn-text">Play / Pause Video</span>
+              </button>
+              <span class="video-note"><i class="fa-solid fa-circle-info"></i> Recorded by Chaithra N</span>
+            </div>
+          </div>
+
+          <!-- Document Resume Showcase -->
+          <div class="resume-doc-card glass-panel">
+            <div class="card-icon-header">
+              <div class="icon-orb"><i class="fa-solid fa-file-pdf"></i></div>
+              <span class="card-kicker">Official Curriculum Vitae</span>
+            </div>
+            <h3 class="doc-card-title">Chaithra N - Professional CV</h3>
+            <p class="doc-card-desc">
+              Comprehensive resume featuring full coursework, contact credentials, technical proficiencies, project chronologies, and hackathon records.
+            </p>
+
+            <!-- Resume Highlights Summary List -->
+            <div class="resume-summary-box">
+              <div class="summary-line">
+                <span class="sum-label"><i class="fa-solid fa-user-tag"></i> Candidate:</span>
+                <span class="sum-val">Chaithra N</span>
+              </div>
+              <div class="summary-line">
+                <span class="sum-label"><i class="fa-solid fa-graduation-cap"></i> Major & Batch:</span>
+                <span class="sum-val">B.E. CSE (Data Science) • 2025 - 29</span>
+              </div>
+              <div class="summary-line">
+                <span class="sum-label"><i class="fa-solid fa-star"></i> Core Skills:</span>
+                <span class="sum-val">Python, Machine Learning, SQL, Java</span>
+              </div>
+              <div class="summary-line">
+                <span class="sum-label"><i class="fa-solid fa-diagram-project"></i> Key Projects:</span>
+                <span class="sum-val">CropShield AI, Rural Product Platform</span>
+              </div>
+              <div class="summary-line">
+                <span class="sum-label"><i class="fa-solid fa-envelope"></i> Email:</span>
+                <span class="sum-val">chaithra312008@gmail.com</span>
+              </div>
+            </div>
+
+            <!-- Resume Action Buttons -->
+            <div class="resume-btn-group">
+              <a href="chaithra_resume.pdf" class="btn btn-primary" download="Chaithra_N_Resume.pdf" target="_blank">
+                <i class="fa-solid fa-download"></i>
+                <span>Download Resume (PDF)</span>
+              </a>
+              <a href="chaithra_resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>View Full PDF</span>
+              </a>
+            </div>
+
+            <div class="resume-pdf-preview-box">
+              <div class="preview-header">
+                <i class="fa-solid fa-file-lines"></i>
+                <span>Document Preview: chaithra_resume.pdf</span>
+              </div>
+              <div class="preview-embed-wrap">
+                <iframe src="chaithra_resume.pdf#toolbar=0&navpanes=0" title="Chaithra N Resume PDF Preview"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-envelope"></i> Get In Touch</span>
+          <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+          <p class="section-subtitle">Whether you have an internship opportunity, project collaboration, or question, I would love to hear from you!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards Column -->
+          <div class="contact-info-column">
+            <!-- Email Card -->
+            <div class="contact-card glass-panel">
+              <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-card-content">
+                <span class="contact-card-label">Email Address</span>
+                <a href="mailto:chaithra312008@gmail.com" class="contact-card-value">chaithra312008@gmail.com</a>
+                <button class="copy-pill-btn" onclick="copyToClipboard('chaithra312008@gmail.com', this)">
+                  <i class="fa-regular fa-copy"></i> <span>Copy Email</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="contact-card glass-panel">
+              <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-card-content">
+                <span class="contact-card-label">Phone / WhatsApp</span>
+                <a href="tel:+917892291145" class="contact-card-value">+91 7892291145</a>
+                <button class="copy-pill-btn" onclick="copyToClipboard('+917892291145', this)">
+                  <i class="fa-regular fa-copy"></i> <span>Copy Phone</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Location Card -->
+            <div class="contact-card glass-panel">
+              <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-card-content">
+                <span class="contact-card-label">Location</span>
+                <span class="contact-card-value">Karnataka, India</span>
+                <span class="contact-subtext">Open to internships, research & remote roles</span>
+              </div>
+            </div>
+
+            <!-- Social Links Card -->
+            <div class="contact-card glass-panel social-card">
+              <div class="contact-card-content full-width">
+                <span class="contact-card-label">Online Presence</span>
+                <div class="contact-social-buttons">
+                  <!-- ========================================================= -->
+                  <!-- LINKEDIN URL PLACEHOLDER: Replace URL below if needed     -->
+                  <!-- ========================================================= -->
+                  <a href="https://www.linkedin.com/in/chaithra-n-a9a063398?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-social-pill linkedin-btn">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn Profile</span>
+                  </a>
+
+                  <!-- ========================================================= -->
+                  <!-- GITHUB URL PLACEHOLDER: Replace URL below if needed       -->
+                  <!-- ========================================================= -->
+                  <a href="https://github.com/Chaithra-N-ship-it" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-social-pill github-btn">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub Profile</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-column glass-panel">
+            <h3 class="form-title">Send a Direct Message</h3>
+            <p class="form-subtitle">Fill in the form below and I will get back to you promptly.</p>
+
+            <form id="contact-form" onsubmit="handleContactSubmit(event)">
+              <div class="form-group">
+                <label for="form-name"><i class="fa-regular fa-user"></i> Your Name *</label>
+                <input type="text" id="form-name" name="name" placeholder="e.g. Alex Johnson" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email"><i class="fa-regular fa-envelope"></i> Your Email Address *</label>
+                <input type="email" id="form-email" name="email" placeholder="e.g. alex@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject"><i class="fa-solid fa-tag"></i> Subject</label>
+                <input type="text" id="form-subject" name="subject" placeholder="e.g. Internship Opportunity / Collaboration" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message"><i class="fa-regular fa-message"></i> Message *</label>
+                <textarea id="form-message" name="message" rows="5" placeholder="Hi Chaithra, I came across your portfolio and would like to discuss..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block submit-btn" id="submit-btn">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <!-- Exactly Chaithra N without code brackets -->
+          <a href="#home" class="nav-brand">Chaithra N</a>
+          <p class="footer-tagline">
+            2nd Year Computer Science (Data Science) Student & Aspiring AI Engineer. Dedicated to crafting data-driven technologies for impactful real-world solutions.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-heading">Quick Navigation</h4>
+          <div class="footer-nav-grid">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <div class="footer-social-wrap">
+          <h4 class="footer-heading">Connect</h4>
+          <div class="social-icons">
+            <!-- ========================================================= -->
+            <!-- GITHUB URL PLACEHOLDER: Replace URL below if needed       -->
+            <!-- ========================================================= -->
+            <a href="https://github.com/Chaithra-N-ship-it" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <!-- ========================================================= -->
+            <!-- LINKEDIN URL PLACEHOLDER: Replace URL below if needed     -->
+            <!-- ========================================================= -->
+            <a href="https://www.linkedin.com/in/chaithra-n-a9a063398?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="mailto:chaithra312008@gmail.com" class="social-btn" title="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="tel:+917892291145" class="social-btn" title="Phone">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+          <div class="footer-cta-wrap">
+            <a href="chaithra_resume.pdf" class="btn btn-sm btn-outline-glow" download="Chaithra_N_Resume.pdf">
+              <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; <span id="current-year">2026</span> <strong>Chaithra N</strong>. All rights reserved. Designed with passion for Data Science & AI.
+        </p>
+        <a href="#home" class="back-to-top-btn" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== AI CHAT WIDGET ==================== -->
+  <div class="ai-chat-widget" id="ai-chat-widget">
+    <!-- Floating Trigger Button -->
+    <button class="ai-chat-trigger-btn" id="ai-chat-trigger-btn" onclick="toggleAIChat()" aria-label="Open AI Assistant" title="Ask Chaithra's AI Assistant">
+      <div class="trigger-icon-wrap">
+        <i class="fa-solid fa-wand-magic-sparkles" id="trigger-open-icon"></i>
+        <i class="fa-solid fa-xmark" id="trigger-close-icon" style="display: none;"></i>
+      </div>
+      <span class="trigger-label">Ask Chaithra AI</span>
+      <span class="trigger-pulse"></span>
+    </button>
+
+    <!-- Chat Modal Window -->
+    <div class="ai-chat-window" id="ai-chat-window" aria-hidden="true">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <div class="chat-avatar">
+            <i class="fa-solid fa-robot"></i>
+            <span class="status-indicator"></span>
+          </div>
+          <div class="chat-title-group">
+            <h4 class="chat-title">Chaithra AI Assistant</h4>
+            <span class="chat-subtitle">Portfolio Guide • 2nd-Year Data Science</span>
+          </div>
+        </div>
+        <div class="chat-header-actions">
+          <button class="chat-close-btn" onclick="toggleAIChat()" aria-label="Close Chat Window">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Messages Body -->
+      <div class="chat-messages" id="chat-messages">
+        <div class="chat-message bot-message">
+          <div class="message-avatar"><i class="fa-solid fa-robot"></i></div>
+          <div class="message-content">
+            <p>👋 Hello! I'm Chaithra's AI Portfolio Assistant. Ask me anything about her skills in Python & ML, <strong>CropShield AI</strong>, education, hackathons, or how to get in touch!</p>
+            <span class="message-time">Just now</span>
+          </div>
+        </div>
+
+        <!-- Suggestion Chips -->
+        <div class="chat-suggestions" id="chat-suggestions">
+          <span class="suggestions-label"><i class="fa-solid fa-lightbulb"></i> Suggested questions:</span>
+          <div class="suggestions-chips">
+            <button class="suggestion-chip" onclick="askPresetQuestion('What are Chaithra\'s technical skills?')">🛠️ Technical Skills</button>
+            <button class="suggestion-chip" onclick="askPresetQuestion('Tell me about CropShield AI')">🌱 CropShield AI</button>
+            <button class="suggestion-chip" onclick="askPresetQuestion('What is Chaithra\'s education and college?')">🎓 Education & College</button>
+            <button class="suggestion-chip" onclick="askPresetQuestion('What hackathons and achievements does she have?')">🏆 Hackathons</button>
+            <button class="suggestion-chip" onclick="askPresetQuestion('How can I contact Chaithra?')">📬 Contact Info</button>
+            <button class="suggestion-chip" onclick="askPresetQuestion('Where can I download her resume?')">📄 Resume Download</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat Input Form -->
+      <form class="chat-input-form" id="chat-input-form" onsubmit="handleAIChatSubmit(event)">
+        <input 
+          type="text" 
+          id="chat-input-text" 
+          placeholder="Ask a question about Chaithra..." 
+          autocomplete="off"
+          required
+        />
+        <button type="submit" class="chat-send-btn" id="chat-send-btn" aria-label="Send Message">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==================== MODALS ==================== -->
+
+  <!-- Certificate Lightbox Modal -->
+  <div class="modal" id="cert-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-backdrop" onclick="closeCertModal()"></div>
+    <div class="modal-container cert-modal-container">
+      <button class="modal-close-btn" onclick="closeCertModal()" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="cert-modal-body">
+        <div class="cert-modal-image-wrap">
+          <img id="cert-modal-img" src="" alt="Certificate Preview">
+        </div>
+        <div class="cert-modal-info">
+          <h3 id="cert-modal-title">Certificate Title</h3>
+          <p id="cert-modal-desc">Certificate description details.</p>
+          <div class="cert-modal-actions">
+            <a id="cert-modal-link" href="" target="_blank" class="btn btn-sm btn-primary">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Open High-Res Image
+            </a>
+            <button class="btn btn-sm btn-outline" onclick="closeCertModal()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CropShield AI Project Modal -->
+  <div class="modal" id="cropshield-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-backdrop" onclick="closeModal('cropshield-modal')"></div>
+    <div class="modal-container project-modal-container glass-panel">
+      <button class="modal-close-btn" onclick="closeModal('cropshield-modal')" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="project-modal-header">
+        <div class="modal-badge"><i class="fa-solid fa-wheat-awn"></i> AI & Agri-Tech Deep Dive</div>
+        <h2>CropShield AI Architecture & Impact</h2>
+        <span class="project-timeline-badge"><i class="fa-regular fa-clock"></i> 6 Months Development Cycle</span>
+      </div>
+      <div class="project-modal-content">
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-bullseye"></i> The Agricultural Problem</h4>
+          <p>
+            Crop diseases and undetected pest invasions cause substantial yield loss every year for small-scale farmers who often lack immediate access to expert agronomists. Misdiagnosing plant diseases leads to inappropriate fertilizer and chemical expenditures.
+          </p>
+        </div>
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-microchip"></i> The Technical Solution</h4>
+          <p>
+            Developed an end-to-end intelligent diagnostic solution written in Python utilizing machine learning algorithms. The system processes visual signatures of affected leaves, cross-references symptom databases, and outputs both identification probabilities and targeted treatment steps.
+          </p>
+        </div>
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-layer-group"></i> Key Capabilities</h4>
+          <ul class="modal-feature-list">
+            <li><strong>Automated Disease Recognition:</strong> Fast recognition of foliar infections and nutritional deficiencies.</li>
+            <li><strong>Dual Treatment Guidance:</strong> Suggests both cost-effective organic cultural controls and safe chemical treatments.</li>
+            <li><strong>Optimized for Real-World Deployment:</strong> Lightweight pipeline suited for field devices and low-bandwidth environments.</li>
+          </ul>
+        </div>
+        <div class="modal-tech-stack">
+          <span class="tech-pill"><i class="fa-brands fa-python"></i> Python</span>
+          <span class="tech-pill"><i class="fa-solid fa-brain"></i> Machine Learning</span>
+          <span class="tech-pill"><i class="fa-solid fa-chart-pie"></i> Data Preprocessing</span>
+          <span class="tech-pill"><i class="fa-solid fa-shield-halved"></i> Crop Health Analytics</span>
+        </div>
+      </div>
+      <div class="project-modal-footer">
+        <a href="https://github.com/Chaithra-N-ship-it" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <i class="fa-brands fa-github"></i> View GitHub Repo
+        </a>
+        <button class="btn btn-outline" onclick="closeModal('cropshield-modal')">Close Window</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rural Market Project Modal -->
+  <div class="modal" id="ruralmarket-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-backdrop" onclick="closeModal('ruralmarket-modal')"></div>
+    <div class="modal-container project-modal-container glass-panel">
+      <button class="modal-close-btn" onclick="closeModal('ruralmarket-modal')" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="project-modal-header">
+        <div class="modal-badge"><i class="fa-solid fa-shop"></i> Rural Commerce Platform</div>
+        <h2>Assist Rural Product Marketing</h2>
+        <span class="project-timeline-badge"><i class="fa-regular fa-clock"></i> 6 Months Development Cycle</span>
+      </div>
+      <div class="project-modal-content">
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-bullseye"></i> The Challenge</h4>
+          <p>
+            Rural craftsmen, weavers, and cottage farmers produce authentic high-value goods, but remain constrained by geographic isolation and dependency on middle agents who consume up to 60-70% of potential profits.
+          </p>
+        </div>
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-code"></i> Engineering Architecture</h4>
+          <p>
+            Built an accessible software platform using Java, Python, and MySQL. Provides rural suppliers with simple product cataloging mechanisms and customer discovery channels that showcase local craftsmanship.
+          </p>
+        </div>
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-check-double"></i> Features Delivered</h4>
+          <ul class="modal-feature-list">
+            <li><strong>Direct-to-Customer Connectivity:</strong> Facilitates direct inquiries and orders without predatory brokerage.</li>
+            <li><strong>Inventory & Product Schema:</strong> Structured MySQL relational database maintaining product attributes, stock, and vendor profiles.</li>
+            <li><strong>Market Reach Expansion:</strong> Streamlined categorization allowing regional specialty discovery.</li>
+          </ul>
+        </div>
+        <div class="modal-tech-stack">
+          <span class="tech-pill"><i class="fa-brands fa-java"></i> Java</span>
+          <span class="tech-pill"><i class="fa-brands fa-python"></i> Python</span>
+          <span class="tech-pill"><i class="fa-solid fa-database"></i> MySQL</span>
+          <span class="tech-pill"><i class="fa-solid fa-network-wired"></i> Full-Stack System</span>
+        </div>
+      </div>
+      <div class="project-modal-footer">
+        <a href="https://github.com/Chaithra-N-ship-it" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <i class="fa-brands fa-github"></i> View GitHub Repo
+        </a>
+        <button class="btn btn-outline" onclick="closeModal('ruralmarket-modal')">Close Window</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="toast" id="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-icon"><i class="fa-solid fa-check-circle"></i></div>
+    <div class="toast-message" id="toast-message">Message copied to clipboard!</div>
+  </div>
+
+  <!-- Javascript -->
+  <script src="script.js"></script>
+</body>
+</html>
